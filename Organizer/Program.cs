@@ -9,7 +9,12 @@ using Microsoft.Identity.Web.UI;
 using Organizer.Contexts;
 using Organizer.Services;
 
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
 
 var initialScopes = builder.Configuration["DownstreamApi:Scopes"]?.Split(' ') ?? builder.Configuration["MicrosoftGraph:Scopes"]?.Split(' ');
 // Add services to the container.
@@ -24,9 +29,9 @@ builder.Services.Configure<CookieAuthenticationOptions>(CookieAuthenticationDefa
 
 // Add DbContext
 using (var context = new OrganizerContext())
-{
-    context.Database.Migrate();
-}
+// {
+//     context.Database.Migrate();
+// }
 builder.Services.AddDbContext<OrganizerContext>();
 
 // Scope services

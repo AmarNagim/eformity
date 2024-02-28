@@ -5,10 +5,10 @@ namespace Organizer.Contexts
 {
     public class OrganizerContext : DbContext
     {
-        public OrganizerContext()
-        {
-            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<OrganizerContext, Configuration>());
-        }
+        // public OrganizerContext()
+        // {
+        //     Database.SetInitializer(new MigrateDatabaseToLatestVersion<OrganizerContext, Configuration>());
+        // }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

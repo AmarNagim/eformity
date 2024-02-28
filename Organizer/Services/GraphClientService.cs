@@ -24,7 +24,7 @@ namespace Organizer.Services
         {
             // Get scopes from appsettings
             var token = _tokenAcquisition.GetAccessTokenForUserAsync(
-                scopes: new string[] { "User.Read", "email", "user.read.all", "mail.read" }
+                scopes: new string[] { "User.Read" }
                 //scopes: (IEnumerable<string>)_configuration.GetSection("MicrosoftGraph:Scopes")
             ).GetAwaiter().GetResult();
 
