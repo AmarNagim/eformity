@@ -5,15 +5,15 @@ namespace Organizer.Contexts
 {
     public class OrganizerContext : DbContext
     {
-        // public OrganizerContext()
-        // {
-        //     Database.SetInitializer(new MigrateDatabaseToLatestVersion<OrganizerContext, Configuration>());
-        // }
+        public OrganizerContext()
+        {
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<OrganizerContext, Configuration>());
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(@"Data Source=Server=tcp:eformity-organizer.database.windows.net,1433;Initial Catalog=eformity-organizer;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=""Active Directory Default"";");
+            optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\eformity.mdf;Integrated Security=True;Connect Timeout=30");
         }
 
         public DbSet<User> Users { get; set; }

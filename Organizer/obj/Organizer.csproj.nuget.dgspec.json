@@ -17,15 +17,15 @@
           "/Users/amarnagim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net6.0"
         ],
         "sources": {
           "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -41,68 +41,56 @@
         }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.0-preview.1.24081.5, )",
+              "version": "[6.0.2, )",
               "noWarn": [
                 "NU1605"
               ]
             },
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[9.0.0-preview.1.24081.5, )",
+              "version": "[6.0.2, )",
               "noWarn": [
                 "NU1605"
               ]
             },
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
-              "target": "Package",
-              "version": "[9.0.0-preview.1.24081.5, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0-preview.1.24081.2, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.0-preview.1.24081.2, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0-preview.1.24081.2, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.Identity.Web": {
               "target": "Package",
-              "version": "[2.17.1, )"
+              "version": "[1.16.0, )"
             },
             "Microsoft.Identity.Web.MicrosoftGraph": {
               "target": "Package",
-              "version": "[2.17.1, )"
+              "version": "[1.16.0, )"
             },
             "Microsoft.Identity.Web.UI": {
               "target": "Package",
-              "version": "[2.17.1, )"
+              "version": "[1.16.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[9.0.0-preview.1.24112.3, )"
+              "version": "[6.0.2, )"
             },
-            "System.Console": {
+            "Westwind.AspNetCore.LiveReload": {
               "target": "Package",
-              "version": "[4.3.1, )"
-            },
-            "WinGet.Sharp": {
-              "target": "Package",
-              "version": "[1.5.1572.1, )"
-            },
-            "chocolatey": {
-              "target": "Package",
-              "version": "[2.2.2, )"
+              "version": "[0.5.0, )"
             }
           },
           "imports": [
@@ -116,6 +104,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -124,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.1.24101.2/RuntimeIdentifierGraph.json"
         }
       }
     }
