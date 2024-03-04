@@ -25,7 +25,6 @@ builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
 // Ignore cookies on start
 builder.Services.Configure<CookieAuthenticationOptions>(CookieAuthenticationDefaults.AuthenticationScheme, options => options.Events = new RejectSessionCookieWhenAccountNotInCacheEvents());
 
-
 builder.Services.AddLiveReload()
     .AddLiveReload();
 
