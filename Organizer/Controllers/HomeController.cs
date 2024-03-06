@@ -42,7 +42,7 @@ namespace Organizer.Controllers
             {
                 con.Open();
                 com.Connection = con;
-                com.CommandText = "SELECT TOP (1000) [Gmail],[Facebook] FROM Databronnen";
+                com.CommandText = "SELECT TOP (1000) [MigrationId],[ProductVersion] FROM [dbo].[__EFMigrationsHistory]";
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
