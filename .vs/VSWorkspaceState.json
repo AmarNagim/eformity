@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Organizer",
-    "\\Organizer\\Properties"
+    "\\Organizer\\Properties",
+    "\\Organizer\\Views",
+    "\\Organizer\\Views\\Shared"
   ],
-  "SelectedNode": "\\Organizer\\Program.cs",
+  "SelectedNode": "\\Organizer\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
