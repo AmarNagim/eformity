@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Organizer
 build_property.RootNamespace = Organizer
-build_property.ProjectDir = C:\Users\demo\Source\Repos\eformityStage2424\Organizer\
+build_property.ProjectDir = C:\Users\demo\source\repos\eformityStage2424\Organizer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\demo\Source\Repos\eformityStage2424\Organizer
+build_property.MSBuildProjectDirectory = C:\Users\demo\source\repos\eformityStage2424\Organizer
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/demo/source/repos/eformityStage2424/Organizer/Views/Home/Index.cshtml]

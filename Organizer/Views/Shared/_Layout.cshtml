@@ -6,68 +6,105 @@
     <title>@ViewData["Title"] - Organizer</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Organizer.styles.css" asp-append-version="true" />
-     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
 
-<header>
-   
-</header>
-    <h2 class="text-lg"> Stefano</h2>
-@RenderBody()
-    <div class="max-w-xs mx-auto bg-gray-100 border-4 rounded-lg border-red-600 shadow-md p-4 mt-4 h-60 relative">
-        <div class="mb-4">
-            <p class="text-lg font-semibold mb-2 border-b-2 border-gray-400">Your Note Title</p>
-            <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut magna at nisi placerat bibendum.</p>
-        </div>
-        <div class="absolute top-0 right-0 flex pt-2 pr-2">
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800"></div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 bg-red-600 p-2">
-            <p class="text-sm text-center text-gray-100">Due: March 10, 2024</p>
+        <!-- Header -->
+        <div class="flex-1 flex flex-col">
+            <header class="flex justify-between items-center p-4 bg-gray-200">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <img src="https://eformity.com/wp-content/uploads//2017/02/eformity-logo.png" alt="Logo" class="max-w-full h-auto" style="max-height: 50px;">
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold pr-4">John Doe</h1>
+                    <div class="w-12 h-12 flex justify-center items-center bg-blue-500 text-white rounded-full text-lg">JD</div>
+                </div>
+            </header>
+            
+
+            <div class="flex-1 flex">
+                <!-- Sidebar -->
+                <div class="w-32 bg-gray-800 text-white p-4">
+                    <ul>
+                        <li class="py-2">
+                            <a href="#" class="block hover:text-gray-300">Home</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="block hover:text-gray-300">About</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="block hover:text-gray-300">Services</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="block hover:text-gray-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Page Content -->
+                <div class="max-w-xs mx-auto bg-gray-100 border-4 rounded-lg border-red-600 shadow-md p-4 mt-4 h-60 relative">
+                    <div class="mb-4">
+                        <p class="text-lg font-semibold mb-2 border-b-2 border-gray-400">Your Note Title</p>
+                        <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut magna at nisi placerat bibendum.</p>
+                    </div>
+                    <div class="absolute top-0 right-0 flex pt-2 pr-2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-red-600 p-2">
+                        <p class="text-sm text-center text-gray-100">Due: March 10, 2024</p>
+                    </div>
+                </div>
+                <div class="max-w-xs mx-auto bg-gray-100 border-4 rounded-lg border-orange-500 shadow-md p-4 mt-4 h-60 relative">
+                    <div class="mb-4">
+                        <p class="text-lg font-semibold mb-2 border-b-2 border-gray-400">Your Note Title</p>
+                        <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut magna at nisi placerat bibendum.</p>
+                    </div>
+                    <div class="absolute top-0 right-0 flex pt-2 pr-2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-orange-500 p-2">
+                        <p class="text-sm text-center text-gray-100">Due: March 10, 2024</p>
+                    </div>
+                </div>
+                <div class="max-w-xs mx-auto bg-gray-100 border-4 rounded-lg border-green-600 shadow-md p-4 mt-4 h-60 relative">
+                    <div class="mb-4">
+                        <p class="text-lg font-semibold mb-2 border-b-2 border-gray-400">Your Note Title</p>
+                        <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut magna at nisi placerat bibendum.</p>
+                    </div>
+                    <div class="absolute top-0 right-0 flex pt-2 pr-2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-800"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-green-600 p-2">
+                        <p class="text-sm text-center text-gray-100">Due: March 10, 2024</p>
+                    </div>
+                </div>
+                @RenderBody()
+
+            </div>
         </div>
     </div>
-    <div class="max-w-xs mx-auto bg-gray-100 border-4 rounded-lg border-orange-500 shadow-md p-4 mt-4 h-60 relative">
-        <div class="mb-4">
-            <p class="text-lg font-semibold mb-2 border-b-2 border-gray-400">Your Note Title</p>
-            <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut magna at nisi placerat bibendum.</p>
+    <!-- Footer -->
+    <footer class="border-top footer text-muted text-lg ">
+        <div class="container">
+            &copy; 2022 - Organizer - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-        <div class="absolute top-0 right-0 flex pt-2 pr-2">
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800"></div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 bg-orange-500 p-2">
-            <p class="text-sm text-center text-gray-100">Due: March 10, 2024</p>
-        </div>
-    </div>
-    <div class="max-w-xs mx-auto bg-gray-100 border-4 rounded-lg border-green-600 shadow-md p-4 mt-4 h-60 relative">
-        <div class="mb-4">
-            <p class="text-lg font-semibold mb-2 border-b-2 border-gray-400">Your Note Title</p>
-            <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut magna at nisi placerat bibendum.</p>
-        </div>
-        <div class="absolute top-0 right-0 flex pt-2 pr-2">
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800 mr-1"></div>
-            <div class="w-1.5 h-1.5 rounded-full bg-gray-800"></div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 bg-green-600 p-2">
-            <p class="text-sm text-center text-gray-100">Due: March 10, 2024</p>
-        </div>
-    </div>
+    </footer>
 
-
-
-
-<footer class="border-top footer text-muted text-lg ">
-    <div class="container">
-        &copy; 2022 - Organizer - <a asp-area=""  asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-</footer>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
