@@ -10622,26 +10622,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\demo\\.nuget\\packages\\": {}
+    "/Users/amarnagim/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\demo\\Source\\Repos\\eformityStage2424\\Organizer\\Organizer.csproj",
+      "projectUniqueName": "/Users/amarnagim/Eformity Stage/eformity/Organizer/Organizer.csproj",
       "projectName": "Organizer",
-      "projectPath": "C:\\Users\\demo\\Source\\Repos\\eformityStage2424\\Organizer\\Organizer.csproj",
-      "packagesPath": "C:\\Users\\demo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\demo\\Source\\Repos\\eformityStage2424\\Organizer\\obj\\",
+      "projectPath": "/Users/amarnagim/Eformity Stage/eformity/Organizer/Organizer.csproj",
+      "packagesPath": "/Users/amarnagim/.nuget/packages/",
+      "outputPath": "/Users/amarnagim/Eformity Stage/eformity/Organizer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\demo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/amarnagim/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10654,6 +10653,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -10720,6 +10724,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -10728,7 +10746,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.1.24101.2/RuntimeIdentifierGraph.json"
       }
     }
   }
